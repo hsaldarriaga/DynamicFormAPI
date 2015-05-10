@@ -7,6 +7,9 @@ class StepsController < ApplicationController
     @steps = Step.all
   end
 
+  def by_procedure
+    @steps = Step.where(procedure_id: params[:procedure_id])
+  end
   # GET /steps/1
   # GET /steps/1.json
   def show

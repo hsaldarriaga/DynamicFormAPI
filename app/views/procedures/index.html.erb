@@ -17,7 +17,7 @@
     <% @procedures.each do |procedure| %>
       <tr>
         <td><%= procedure.procedure_id %></td>
-        <td><%= procedure.group_id %></td>
+        <td><%= procedure.group.name %></td>
         <td><%= procedure.name %></td>
         <td><%= procedure.description %></td>
         <td><%= link_to 'Show', procedure %></td>

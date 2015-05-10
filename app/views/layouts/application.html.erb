@@ -12,7 +12,23 @@
   </head>
 
   <body>
-
+      <nav class="top-bar" data-topbar>
+        <ul class="title-area">
+          <li class="name">
+            <h1><a href="#">API de Procesos</a></h1>
+          </li>
+          <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+        </ul>
+    
+      <section class="top-bar-section">
+        <!-- Right Nav Section -->
+        <ul class="right">
+          <li class="active"><%= link_to 'Groups', groups_path %></li>
+          <li class="active"><%= link_to 'Procedures', procedures_path %></li>
+          <li class="active"><%= link_to 'Steps', steps_path %></li>
+        </ul>
+      </section>
+    </nav>
     <%= yield %>
     <%= javascript_include_tag "application" %>
   </body>

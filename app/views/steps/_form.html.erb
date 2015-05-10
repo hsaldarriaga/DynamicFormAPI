@@ -17,7 +17,7 @@
   </div>
   <div class="field">
     <%= f.label :procedure_id %><br>
-    <%= f.number_field :procedure_id %>
+    <%= f.collection_select(:procedure_id, Procedure.all, :procedure_id, :name) %>
   </div>
   <div class="field">
     <%= f.label :content %><br>

@@ -7,6 +7,9 @@ class ProceduresController < ApplicationController
     @procedures = Procedure.all
   end
 
+  def by_group
+    @procedures = Procedure.where(group_id: params[:group_id])
+  end
   # GET /procedures/1
   # GET /procedures/1.json
   def show
