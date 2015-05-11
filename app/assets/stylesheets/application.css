@@ -15,3 +15,7 @@
  *= require foundation_and_overrides
 
  */
+ body {
+ 	margin-right: 10px;
+ 	margin-left: 10px;
+ }

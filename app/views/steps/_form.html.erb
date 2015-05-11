@@ -12,7 +12,7 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :step_id %><br>
+    <%= f.label :step_id, 'Procedure step number, for example step 1, 2, 3' %><br>
     <%= f.number_field :step_id %>
   </div>
   <div class="field">
@@ -20,10 +20,11 @@
     <%= f.collection_select(:procedure_id, Procedure.all, :procedure_id, :name) %>
   </div>
   <div class="field">
-    <%= f.label :content %><br>
+    <%= f.label :content, 'See below*' %><br>
     <%= f.text_field :content %>
   </div>
   <div class="actions">
     <%= f.submit %>
   </div>
+  <p>*The field content, can contain information about checkBoxes, or another necessary controls in this step</p>
 <% end %>
