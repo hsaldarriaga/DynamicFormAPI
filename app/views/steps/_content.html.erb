@@ -1,0 +1,76 @@
+<div>
+	<div id="fields">
+		<h4>Included Fields: </h4>
+	</div>
+	<br>
+	<ul class="inline-list">
+		<li>
+			<label id="input_field_container">Field Type
+				<select id="field_type">
+					<option value="0">Question(Enumeration)</option>
+					<option value="1">Boolean</option>
+					<option value="2">Numeric</option>
+					<option value="3">Label</option>
+				</select>
+			</label>	
+		</li>
+		<li>
+			<label>Caption
+				<input id="caption" type="text">
+			</label>
+		</li>
+		<li>
+			<label id="possibilities">Possible Values
+				<ul id="possibilities_container" class="inline-list">
+				</ul>
+			</label>
+		</li>
+	</ul>
+	<ul class="inline-list" id="custom_possibilities">
+		<li><input id="add_text_possibility" type="text" ></li>
+		<li><a id="add_possibility" class="vertical-a">Add possible Value</a></li>
+	</ul>
+	<a id="add_field" class="button">Add field</a>
+	<br>
+	<ul class="inline-list" id ="decision_container">
+		<li>
+			<label>Select Field
+				<select id="decision_field_select"></select>
+			</label>
+		</li>
+		<li id ="li_condition">
+			<label>Condition
+				<select id="number_condition_decision">
+					<option value=">">></option>
+					<option value="<"><</option>
+					<option value="=">=</option>
+				</select>
+			</label>
+		</li>
+		<li id="li_value">
+			<label>Value
+				<input id="number_value" type="number">
+			</label>
+		</li>
+		<li id="li_equal_to">
+			<label>Equal to
+				<select id="select_condition_decision"></select>
+			</label>
+		</li>
+	</ul>
+	<div id="branches">
+		
+	</div>
+	<a id="add_branch">Add Branch</a>
+	<div id="decisions">
+		
+	</div>
+	<ul class="inline-list" id="decision_button_container">
+		<li>
+			<label>Head To Step..
+				<input id="go_to_step" type="number">
+			</label>
+		</li>
+		<li><a id="add_decision" class="button">Add Decision</a></li>
+	</ul>
+</div>

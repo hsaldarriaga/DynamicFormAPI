@@ -19,12 +19,12 @@
     <%= f.label :procedure_id %><br>
     <%= f.collection_select(:procedure_id, Procedure.all, :procedure_id, :name) %>
   </div>
-  <div class="field">
-    <%= f.label :content, 'Content, See below*' %><br>
+  <div>
+    <%= f.label :content %><br>
     <%= f.text_field :content %>
   </div>
+  <%= render 'content' %>
   <div class="actions">
     <%= f.submit %>
   </div>
-  <p>*The field content, can contain information about checkBoxes, or another necessary controls in this step</p>
 <% end %>

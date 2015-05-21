@@ -1,4 +1,5 @@
 class ProceduresController < ApplicationController
+  before_action :authenticate_user!, only: [:edit, :update, :destroy]
   before_action :set_procedure, only: [:show, :edit, :update, :destroy]
 
   # GET /procedures
