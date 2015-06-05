@@ -17,34 +17,57 @@ La estructura de las categorías es:
 
 == GROUPS: 
 Id: Identificador único usado por Ruby on Rails.
+
 Group_id: Identificador del grupo.
+
 Name: Nombre del grupo
+
 URL: Enlace hacia el JSON de este grupo.
+
 
 == PROCEDURES:
 Id: Identificador único asignado por Rails.
+
 Procedure_id: Identificador del procedimiento.
+
 Group_id: Identificador del grupo al cual pertenece el procedimiento.
+
 Name: Nombre del procedimiento.
+
 Description: Descripción del procedimiento.
+
 URL: Enlace hacia este JSON de este procedimiento.
+
 
 == STEPS:
 ID: Identificador único asignado por Rails.
+
 Step_id: Identificador del paso.
+
 Procedure_id: Identificador del procedimiento del cual precede.
+
 Content: Es una cadena que contiene el siguiente Json
+
 Fields: Campos que tiene el step
+
 Decisions: Conjunto de decisiones que conducen a otro step.
+
 FIELDS: Es un vector de campos
 	Id :  Identificador del campo
+	
 	Caption: Aviso que tiene el campo
+	
 	Field_type: Tipo de Campo: 0, Questions. 1, boolean. 2, Numeric, 3, Label
+	
 	Posible_values: Posibles valores del campo
 
 == DECISIONS: 
 Branch: contiene una rama de decisiones según los campos
+
 Field_id = identificador del campo
+
 Comparision_type: Tipo de comparación, puede ser >, = y <
+
 Value = Valor que va a ser comparado
+
 go_to_step: step_id al cual se dirige si se sigue la rama de decisión.
