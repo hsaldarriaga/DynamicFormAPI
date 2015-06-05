@@ -71,3 +71,28 @@ Comparision_type: Tipo de comparación, puede ser >, = y <
 Value = Valor que va a ser comparado
 
 go_to_step: step_id al cual se dirige si se sigue la rama de decisión.
+== LINKS
+
+obtener todas las categorias
+
+..com/groups.json
+
+obtiene todos los procesos
+
+.com/procedures.json
+
+obtiene todos los pasos
+
+..com/steps.json
+
+
+obtiene todos los pasos para un id de proceso dado
+
+..com/steps/by_procedure/[id].json
+[id] es el id del proceso sin "[","]"
+
+obtiene todos los procesos para una categoria dada
+
+..com/procedures/by_group/[id].json
+
+[id] es el id de la categoria(group)
